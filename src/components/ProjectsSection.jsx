@@ -3,33 +3,35 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Resume Genie",
+    description:
+      "AI-powered Resume Analyzer and Builder tool to generate ATS-friendly resumes with real-time suggestions.",
+    image: "/projects/project1.png", // Add image in /public/projects/
+    tags: ["Python", "Streamlit", "NLP", "Machine Learning"],
+    demoUrl: "#", // Add live link if hosted
+    githubUrl: "https://github.com/AVIRAL45678/ResumeGenie",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Authentico",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Secure employee web portal hosted on AWS with role-based data management and internal communication.",
+    image: "/projects/project2.png", // Add image in /public/projects/
+    tags: ["React", "Django", "AWS", "PostgreSQL"],
+    demoUrl: "#", // Add live link if hosted
+    githubUrl: "https://github.com/AVIRAL45678/Authentico",
   },
-  {
-    id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+{
+  id: 3,
+  title: "AI-Powered Code Reviewer",
+  description:
+    "A full-stack web application that uses AI to review and suggest improvements for code snippets",
+  image: "/projects/project3.png", // Ensure this image is placed in /public/projects/
+  tags: ["React", "Node.js", "Express.js", "Javascript"],
+  demoUrl: "#", // Add your live deployed URL here if available
+  githubUrl: "https://github.com/AVIRAL45678/code_reviewer",
+},
+
 ];
 
 export const ProjectsSection = () => {
@@ -37,7 +39,6 @@ export const ProjectsSection = () => {
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
           Featured <span className="text-primary"> Projects </span>
         </h2>
 
@@ -52,7 +53,7 @@ export const ProjectsSection = () => {
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden bg-secondary/20">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -62,14 +63,17 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                  {project.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
@@ -78,6 +82,7 @@ export const ProjectsSection = () => {
                     <a
                       href={project.demoUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
@@ -85,6 +90,7 @@ export const ProjectsSection = () => {
                     <a
                       href={project.githubUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <Github size={20} />
@@ -100,7 +106,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/AVIRAL45678"
           >
             Check My Github <ArrowRight size={16} />
           </a>

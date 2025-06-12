@@ -1,11 +1,11 @@
 import {
-  Instagram,
   Linkedin,
   Mail,
   MapPin,
   Phone,
   Send,
-  Twitch,
+  Github,
+  Instagram,
   Twitter,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -44,66 +44,81 @@ export const ContactSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">
-              {" "}
               Contact Information
             </h3>
 
             <div className="space-y-6 justify-center">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />{" "}
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium"> Email</h4>
+                  <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:aviralrastogi2003@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    aviralrastogi2003@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium"> Phone</h4>
+                  <h4 className="font-medium">Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:+917251904938"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    +91-7251904938
                   </a>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
+                  <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
-                  </a>
+                  <h4 className="font-medium">Location</h4>
+                  <p className="text-muted-foreground hover:text-primary transition-colors">
+                    Meerut, Uttar Pradesh, India
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4"> Connect With Me</h4>
+              <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/aviral-rastogi-5b0321268/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
+                <a
+                  href="https://github.com/AVIRAL45678"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
                 </a>
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.instagram.com/aviral_rastogi08?igsh=NnR3dDVocjNiMjJk&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Instagram />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitch />
+                <a
+                  href="https://x.com/aviralr06478532?s=21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Twitter />
                 </a>
               </div>
             </div>
@@ -113,7 +128,7 @@ export const ContactSection = () => {
             className="bg-card p-8 rounded-lg shadow-xs"
             onSubmit={handleSubmit}
           >
-            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+            <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
             <form className="space-y-6">
               <div>
@@ -121,7 +136,6 @@ export const ContactSection = () => {
                   htmlFor="name"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Name
                 </label>
                 <input
@@ -129,8 +143,8 @@ export const ContactSection = () => {
                   id="name"
                   name="name"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  placeholder="Aviral Rastogi"
                 />
               </div>
 
@@ -139,7 +153,6 @@ export const ContactSection = () => {
                   htmlFor="email"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Email
                 </label>
                 <input
@@ -147,8 +160,8 @@ export const ContactSection = () => {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
+                  placeholder="example@gmail.com"
                 />
               </div>
 
@@ -157,15 +170,14 @@ export const ContactSection = () => {
                   htmlFor="message"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
-                  placeholder="Hello, I'd like to talk about..."
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
+                  placeholder="Hello, I'd like to discuss..."
                 />
               </div>
 

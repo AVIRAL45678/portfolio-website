@@ -2,29 +2,35 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
+  // Programming Languages
+  { name: "C/C++", level: 80, category: "languages" },
+  { name: "JavaScript", level: 80, category: "languages" },
+  { name: "Python", level: 65, category: "languages" },
+  { name: "SQL", level: 85, category: "languages" },
+
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "HTML/CSS", level: 80, category: "frontend" },
+  { name: "React.js", level: 75, category: "frontend" },
+  { name: "Tailwind CSS", level: 80, category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  { name: "Django", level: 60, category: "backend" },
+  { name: "MySQL", level: 85, category: "backend" },
+  { name: "PostgreSQL", level: 70, category: "backend" },
 
-  // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  // Cloud & Deployment
+  { name: "AWS (EC2, RDS, S3)", level: 65, category: "cloud" },
+
+  // Tools & Others
+  { name: "Git/GitHub", level: 70, category: "tools" },
+  { name: "Power BI", level: 75, category: "tools" },
+  { name: "Streamlit", level: 60, category: "tools" },
+  { name: "System Design", level: 60, category: "tools" },
+  { name: "DSA (Data Structures & Algorithms)", level: 85, category: "tools" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "languages", "frontend", "backend", "cloud", "tools"];
+
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
