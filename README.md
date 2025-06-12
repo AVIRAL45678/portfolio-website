@@ -51,17 +51,16 @@ Feel free to explore my featured projects and get in touch!
 ### 1. [Resume Genie](https://github.com/AVIRAL45678/ResumeGenie)
 - **Description:** AI-powered Resume Analyzer & Builder with NLP techniques for ATS optimization.
 - **Tech:** Python, Streamlit, NLP, Machine Learning
-- **Demo:** Coming Soon
 
 ### 2. [Authentico](https://github.com/AVIRAL45678/Authentico)
 - **Description:** Secure Employee Portal deployed on AWS for internal communication and data management.
 - **Tech:** React.js, Django, AWS, PostgreSQL
-- **Demo:** Coming Soon
 
-### 3. [Atlas World](https://github.com/AVIRAL45678/AtlasWorld)
-- **Description:** Interactive data visualization platform featuring global geographical analytics.
-- **Tech:** React.js, D3.js, GeoJSON, API Integration
-- **Demo:** Coming Soon
+
+### 3. [AI-powered Code Reviewer](https://github.com/AVIRAL45678/code-reviewer)
+- **Description:** A full-stack web application that uses AI to review and suggest improvements for code snippets
+- **Tech:** React.js, Node.js, Express.js, Javascript
+
 
 ---
 
