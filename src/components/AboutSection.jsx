@@ -30,7 +30,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1gdR1Ofpp6_wDuomVff7c4VrvKAU92DJG/view?usp=drive_link
+                href="https://drive.google.com/file/d/1h9AqViKy67rBpUKBk0daSFC02JyOA7So/view?usp=sharing
 " // Replace this with your actual CV path
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                 download
